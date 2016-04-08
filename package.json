@@ -1,18 +1,23 @@
 {
-  "name": "node-sass-endpoint",
-  "version": "0.3.1",
-  "description": "Easily serve sassy css assets on express",
+  "name": "node-less-endpoint",
+  "version": "0.2.0",
+  "description": "Easily serve LESS css assets on express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test/server_test.js"
   },
   "author": "Gilbert <gilbertbagrza@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^3.3.3"
+    "less": "^2.6.1"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/mindeavor/node-sass-endpoint.git"
+    "type": "git",
+    "url": "https://github.com/mindeavor/node-less-endpoint.git"
+  },
+  "devDependencies": {
+    "express": "^4.13.4",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
   }
 }
